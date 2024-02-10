@@ -1,0 +1,8 @@
+import segno
+
+xd = input("Insertar enlace: ")
+
+qrcode = segno.make_qr(xd)
+
+xdd = input("Pongale nombre al qr: ")
+qrcode.save(xdd + ".png")
